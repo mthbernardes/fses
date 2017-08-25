@@ -6,7 +6,7 @@ usage example
 Get all subdomains of a domain, using all search engines plugins
 '''
 
-query = "site:conviso.com.br"
+query = "site:domain.com"
 results = set(util.searchAll(query,verbose=False))
 domains = set()
 for result in results:

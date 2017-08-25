@@ -21,7 +21,7 @@ pip install -r requeriments.txt
 # Usage
 
 <b>Simple search using Ask</b>
-<pre>
+```python
 from searchEngines.ask import ask
 
 print "Ask Search"
@@ -30,10 +30,10 @@ a = ask() # Start a instance of any search engine
 results = a.search(query,verbose=True) #All classes use the method search, verbose is used just to print, what page the script is scraping
 for url in results
 	print url
-</pre>
+```
 
 <b>All search engine methods</b>
-<pre>
+```python
 query = "site:domain.com"
 
 from searchEngines.ask import ask
@@ -55,16 +55,16 @@ results.extend(yahoo().search(query,verbose=verbose))
 from searchEngines.duckduckgo import duckDuckGo
 print "DuckDuckGo Search"
 results.extend(duckDuckGo().search(query,verbose=verbose))
-</pre>
+```
 
 <b>Search using all search engines</b>
-<pre>
+```python
 from utils import util
 query = "site:conviso.com.br"
 results = util.searchAll(query,verbose=False) #searchAll has the same properties then search method
 for url in results
 	print url
-</pre>
+```
 
 # How to create a search engine plugin
 
