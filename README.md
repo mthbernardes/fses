@@ -68,7 +68,7 @@ for url in results
 
 # How to create a search engine plugin
 
-Just follow the searchEngines/example.py, it's a template of how to create a plugin to another search engine.
+Just follow the <a href="https://github.com/mthbernardes/fses/blob/master/searchEngines/example.py">searchEngines/example.py</a>, it's a template of how to create a plugin to another search engine.
 
 # Greatz
 
