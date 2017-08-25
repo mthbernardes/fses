@@ -1,6 +1,6 @@
 # fses
 
-Fucking Search Engines Scraper - python library to scrap url from search engines
+Fucking Search Engines Scraper - python library to scrap url's from search engines
 
 # Search Engines we scrap
 <pre>
