@@ -17,18 +17,28 @@ def searchAll(query,verbose=False):
 	results = list()
 
 	print "DuckDuckGo Search"
-	results.extend(duckDuckGo().search(query,verbose=verbose))
-	
+	result = duckDuckGo().search(query,verbose=verbose)
+	if result:
+		results.extend(result)
+
 	print "Yahoo Search"
-	results.extend(yahoo().search(query,verbose=verbose))
-	
+	result = yahoo().search(query,verbose=verbose)
+	if result:
+		results.extend(result)
+
 	print "Bing Search"
-	results.extend(bing().search(query,verbose=verbose))
-	
+	result = bing().search(query,verbose=verbose)
+	if result:
+		results.extend(result)
+
 	print "UOL Search"
-	results.extend(uol().search(query,verbose=verbose))
-	
+	result = uol().search(query,verbose=verbose)
+	if result:
+		results.extend(result)
+
 	print "Ask Search"
-	results.extend(ask().search(query,verbose=verbose))
-	
+	result = ask().search(query,verbose=verbose)
+	if result:
+		results.extend(result)
+
 	return results
